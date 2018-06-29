@@ -33,9 +33,11 @@ resource "aws_ecs_cluster" "cluster" {
   name = "${var.cluster}-${var.environment}"
 }
 
-module "ecs_tasks" {
-  source = "../ecs_tasks"
+# module "ecs_tasks" {
+#   source = "../ecs_tasks"
 
-  environment = "${var.environment}"
-  cluster     = "${var.cluster}"
-}
+
+#   environment = "${var.environment}"
+#   cluster     = "${var.cluster}"
+# }
+
